@@ -1,0 +1,25 @@
+<section id="stats" class="stats section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+      @for (card of cards; track $index) {
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i>
+          <mat-icon>sentiment_satisfied</mat-icon>
+        </i>
+
+        <div class="stats-item">
+          <!-- <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+            class="purecounter"></span> -->
+          <h3>{{card.value}}</h3>
+          <p>{{card.name}}</p>
+        </div>
+      </div>
+      }
+
+
+    </div>
+
+  </div>
+</section>
